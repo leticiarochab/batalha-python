@@ -17,9 +17,9 @@ class Batalha:
         self._qtdRodadas += 1
         print("\n\n ---------- Jogada [" + str(self._qtdRodadas) + "] ----------\n")
         temVencedorRodada = False
-        cartasRodada = list[Carta]()
+        cartasRodada = list()
 
-        while(not temVencedorRodada and self._qtdRodadas < 15):
+        while(not temVencedorRodada):
             carta1 = self._jogador1._baralho.retirarCarta()
             sleep(1)
             print('Jogador [' + self._jogador1._nome + '] retirou a carta : ', carta1)
